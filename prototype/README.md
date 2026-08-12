@@ -1,5 +1,10 @@
 # Magic Conch enclosure prototype
 
+> **Recommended revision:** The video-informed redesign is in [`v2/`](v2/).
+> It adds a smoother exterior, four hidden split snap closures, a leaf-shaped
+> grille with an internal mesh seat, and a reinforced pull-string opening. The
+> files below are retained as the original V1 prototype.
+
 This folder contains a first-pass, 3D-printable electronics enclosure derived from
 `magicconch_smoothed_original.stl`. The original source mesh is preserved outside
 this folder.
