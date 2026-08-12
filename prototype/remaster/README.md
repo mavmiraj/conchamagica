@@ -1,4 +1,4 @@
-# Magic Conch faithful remaster
+# Magic Conch faithful remaster — corrected layout
 
 This is the corrected, recommended enclosure. It treats the supplied
 `magicconch_smoothed_original.stl` as the authoritative exterior and builds the
@@ -18,6 +18,14 @@ functional housing inside it.
 - The original modeled string and ring are excluded so a real pull mechanism can
   be installed.
 
+## Correct housing assignment
+
+- The plain/front housing is closed and continuous. It has no speaker grille.
+- The rounded-to-pointed speaker/mesh opening is on the spiral-side back housing,
+  matching the location marked in the supplied SolidWorks screenshot.
+- The round internal speaker and PCB mounting pegs from the earlier revision have
+  been removed. Those cavity areas remain flat and unobstructed.
+
 ## Functional remaster
 
 - Two deeply hollowed halves with a nominal 3.0 mm wall and 0.4 mm total seam
@@ -25,11 +33,10 @@ functional housing inside it.
 - Four forked snap posts and matching detent sockets. Every 3.3 mm root-pad
   perimeter is checked against the original shell projection, keeping the closure
   hardware concealed inside the assembled outline.
-- Rounded-to-pointed speaker opening based on the reference-video mesh profile.
-- A 2.8 mm internal mesh seat with four integrated M2 pilot bosses for a speaker
-  or removable speaker adapter.
-- Four M2 pilot bosses grown directly from the back cavity floor in a generic
-  38 x 12 mm PCB layout.
+- Rounded-to-pointed speaker opening on the back housing, based on the
+  reference-video mesh profile.
+- A low, 2.8 mm internal mesh-retaining ledge around the back opening, without
+  protruding speaker or PCB mounting pegs.
 - A 6.5 mm pull-string opening with an internal reinforcing collar. The string,
   spool, spring, chain, and return mechanism are separate hardware.
 
@@ -49,9 +56,9 @@ added to the native parts after choosing the actual hardware.
 
 ## Validation
 
-- Front STL: 35,632 triangles, one component, zero boundary edges, zero
+- Front STL: 34,138 triangles, one component, zero boundary edges, zero
   non-manifold edges, and positive enclosed volume.
-- Back STL: 42,258 triangles, one component, zero boundary edges, zero
+- Back STL: 37,168 triangles, one component, zero boundary edges, zero
   non-manifold edges, and positive enclosed volume.
 - Assembled solid-intersection volume: 0.0 mm3. The two shells do not collide in
   their modeled assembled positions; snap-head interference occurs only while
