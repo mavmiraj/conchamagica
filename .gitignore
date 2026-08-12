@@ -15,3 +15,8 @@ prototype/back_preview.png
 prototype/magic_conch_front_prototype.stl
 prototype/magic_conch_back_prototype.stl
 
+# Local conversion and diagnostic variants
+prototype/*.step
+prototype/*_healed.SLDPRT
+prototype/*_unified.SLDPRT
+prototype/OriginalImportProbe.SLDPRT

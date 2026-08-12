@@ -22,6 +22,8 @@ the selected speaker and mesh dimensions.
 
 ## Primary files
 
+- `MagicConch_FrontHousing.SLDPRT` - native SolidWorks front housing
+- `MagicConch_BackHousing.SLDPRT` - native SolidWorks back housing
 - `MagicConch_FrontHousing_print.stl` - front printable housing with speaker,
   string, and closure openings
 - `MagicConch_BackHousing_print.stl` - back printable housing with closure openings
@@ -32,6 +34,17 @@ the selected speaker and mesh dimensions.
 - `solidworks_build.log` - SolidWorks automation log
 
 ## SolidWorks import
+
+Native SolidWorks parts are included. They were produced by converting simplified
+0.5 mm-tolerance manifold copies to STEP/BREP and importing each as one solid body.
+The full-resolution `*_print.stl` files remain the authoritative print masters.
+
+SolidWorks opens and saves both native parts with zero file errors. Its deep body
+checker reports six `face-to-face inconsistency` warnings on each part, caused by
+the faceted planar BREP topology. Use the native parts for layout and component-fit
+work; use the watertight manifold STLs for slicing and printing.
+
+To re-import the print masters manually:
 
 1. Open SolidWorks and choose **File > Open**.
 2. Select one of the `*_print.stl` files.

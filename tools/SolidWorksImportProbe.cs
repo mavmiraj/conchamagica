@@ -28,19 +28,30 @@ internal static class SolidWorksImportProbe
                 (int)swUserPreferenceToggle_e.swVrmlStlImportAsPSMesh,
                 true);
             int errors = 0;
-            int loadWarnings = 0;
-            ModelDoc2 model = application.OpenDoc6(
-                args[0],
-                (int)swDocumentTypes_e.swDocPART,
-                (int)swOpenDocOptions_e.swOpenDocOptions_Silent,
-                "",
-                ref errors,
-                ref loadWarnings);
+            ModelDoc2 model;
+            string extension = System.IO.Path.GetExtension(args[0]).ToLowerInvariant();
+            if (extension == ".step" || extension == ".stp")
+            {
+                object importData = application.GetImportFileData(args[0]);
+                model = application.LoadFile4(args[0], "r", importData, ref errors);
+            }
+            else
+            {
+                int loadWarnings = 0;
+                model = application.OpenDoc6(
+                    args[0],
+                    (int)swDocumentTypes_e.swDocPART,
+                    (int)swOpenDocOptions_e.swOpenDocOptions_Silent,
+                    "",
+                    ref errors,
+                    ref loadWarnings);
+            }
             if (model == null)
             {
                 Console.Error.WriteLine("Import returned null; errors=" + errors);
                 return 1;
             }
+            model.ForceRebuild3(false);
             int saveErrors = 0;
             int saveWarnings = 0;
             bool saved = model.Extension.SaveAs(
