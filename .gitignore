@@ -1,0 +1,23 @@
+# Local geometry/runtime dependencies
+tools/python_libs/
+tools/bin/
+tools/__pycache__/
+
+# SolidWorks temporary/lock files
+~$*.SLDPRT
+~$*.SLDASM
+~$*.SLDDRW
+
+# Generated logs and intermediate meshes/previews
+prototype/*.log
+prototype/front_preview.png
+prototype/back_preview.png
+prototype/magic_conch_front_prototype.stl
+prototype/magic_conch_back_prototype.stl
+
+# Local conversion and diagnostic variants
+prototype/*.step
+prototype/*_healed.SLDPRT
+prototype/*_unified.SLDPRT
+prototype/OriginalImportProbe.SLDPRT
+prototype/*_healed_preview_source.stl
