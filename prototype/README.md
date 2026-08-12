@@ -27,8 +27,10 @@ the selected speaker and mesh dimensions.
 - `MagicConch_FrontHousing_print.stl` - front printable housing with speaker,
   string, and closure openings
 - `MagicConch_BackHousing_print.stl` - back printable housing with closure openings
-- `MagicConch_FrontHousing_preview.png` - front housing inspection render
-- `MagicConch_BackHousing_preview.png` - back housing inspection render
+- `MagicConch_FrontHousing_preview.png` - front inspection render generated from
+  the healed/native 0.5 mm BREP source geometry
+- `MagicConch_BackHousing_preview.png` - back inspection render generated from
+  the healed/native 0.5 mm BREP source geometry
 - `magic_conch_front_prototype.stl` and `magic_conch_back_prototype.stl` - pre-cut
   watertight intermediate shells
 - `solidworks_build.log` - SolidWorks automation log

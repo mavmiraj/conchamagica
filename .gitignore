@@ -20,3 +20,4 @@ prototype/*.step
 prototype/*_healed.SLDPRT
 prototype/*_unified.SLDPRT
 prototype/OriginalImportProbe.SLDPRT
+prototype/*_healed_preview_source.stl
