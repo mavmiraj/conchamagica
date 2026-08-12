@@ -1,5 +1,9 @@
 # Magic Conch housing V2
 
+> **Superseded:** This exploratory revision changed too much of the source surface
+> and placed its closure hardware too close to the projected edge. Use
+> [`../remaster/`](../remaster/) for the faithful, recommended design.
+
 This revision translates the construction shown in the reference video into a
 printable two-piece electronics enclosure while preserving the original conch
 silhouette.
